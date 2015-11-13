@@ -2,4 +2,4 @@
 Toontown Online source code with no Toontown Rewritten elements
 
 # Thanks
-Thanks to Disney, Toontown Rewritten, and the Toontown community for maing this source code possible.
+Thanks to Disney, Toontown Rewritten, and the Toontown community for making this source code possible.
