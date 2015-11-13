@@ -1,0 +1,30 @@
+
+
+Starting Toontown...
+Current time: Tue Nov 10 21:20:31 2015 EST
+sys.path =  ['/Users/Aaron/Desktop/ToontownOnline', '/usr/lib/python27.zip', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-darwin', '/usr/lib/python2.7/plat-mac', '/usr/lib/python2.7/plat-mac/lib-scriptpackages', '/usr/Extras/lib/python', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/Library/Python/2.7/site-packages', '/Developer/Panda3D']
+sys.argv =  ['/Users/Aaron/Desktop/ToontownOnline/start.py']
+OTPLocalizer: Running in language: English
+TTLocalizer: Running in language: English
+ToontownStart: Polling for game2 to finish...
+ToontownStart: Game2 is finished.
+ToontownStart: Starting the game.
+ToontownStart: setting default font
+ToontownStart: Loading default gui sounds
+ToontownStart: serverVersion:  sv0.0.0.1-dev
+TTAccount: accountServer from launcher:  
+TTAccount: default accountServer:  https://toontown.go.com
+Traceback (most recent call last):
+  File "/Users/Aaron/Desktop/ToontownOnline/start.py", line 1, in <module>
+    from toontown.toonbase import ToontownStart
+  File "/Users/Aaron/Desktop/ToontownOnline/toontown/toonbase/ToontownStart.py", line 87, in <module>
+    from toontown.distributed import ToontownClientRepository
+  File "/Users/Aaron/Desktop/ToontownOnline/toontown/distributed/ToontownClientRepository.py", line 28, in <module>
+    from otp.distributed import OTPClientRepository
+  File "/Users/Aaron/Desktop/ToontownOnline/otp/distributed/OTPClientRepository.py", line 27, in <module>
+    from otp.avatar.DistributedPlayer import DistributedPlayer
+  File "/Users/Aaron/Desktop/ToontownOnline/otp/avatar/DistributedPlayer.py", line 11, in <module>
+    from otp.chat import TalkAssistant
+  File "/Users/Aaron/Desktop/ToontownOnline/otp/chat/TalkAssistant.py", line 14, in <module>
+    from otp.nametag.NametagConstants import CFSpeech, CFTimeout, CFThought
+ImportError: No module named nametag.NametagConstants

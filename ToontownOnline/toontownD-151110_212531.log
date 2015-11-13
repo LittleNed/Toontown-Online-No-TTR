@@ -1,0 +1,36 @@
+
+
+Starting Toontown...
+Current time: Tue Nov 10 21:25:31 2015 EST
+sys.path =  ['/Users/Aaron/Desktop/ToontownOnline', '/usr/lib/python27.zip', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-darwin', '/usr/lib/python2.7/plat-mac', '/usr/lib/python2.7/plat-mac/lib-scriptpackages', '/usr/Extras/lib/python', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/Library/Python/2.7/site-packages', '/Developer/Panda3D']
+sys.argv =  ['/Users/Aaron/Desktop/ToontownOnline/start.py']
+OTPLocalizer: Running in language: English
+TTLocalizer: Running in language: English
+ToontownStart: Polling for game2 to finish...
+ToontownStart: Game2 is finished.
+ToontownStart: Starting the game.
+ToontownStart: setting default font
+ToontownStart: Loading default gui sounds
+ToontownStart: serverVersion:  sv0.0.0.1-dev
+TTAccount: accountServer from launcher:  
+TTAccount: default accountServer:  https://toontown.go.com
+Traceback (most recent call last):
+  File "/Users/Aaron/Desktop/ToontownOnline/start.py", line 1, in <module>
+    from toontown.toonbase import ToontownStart
+  File "/Users/Aaron/Desktop/ToontownOnline/toontown/toonbase/ToontownStart.py", line 88, in <module>
+    cr = ToontownClientRepository.ToontownClientRepository(serverVersion, launcher)
+  File "/Users/Aaron/Desktop/ToontownOnline/toontown/distributed/ToontownClientRepository.py", line 76, in __init__
+    OTPClientRepository.OTPClientRepository.__init__(self, serverVersion, launcher, playGame=PlayGame.PlayGame)
+  File "/Users/Aaron/Desktop/ToontownOnline/otp/distributed/OTPClientRepository.py", line 52, in __init__
+    ClientRepositoryBase.__init__(self)
+  File "/Developer/Panda3D/direct/distributed/ClientRepositoryBase.py", line 49, in __init__
+    self.readDCFile(dcFileNames)
+  File "/Developer/Panda3D/direct/distributed/ConnectionRepository.py", line 312, in readDCFile
+    self.importModule(dcImports, moduleName, importSymbols)
+  File "/Developer/Panda3D/direct/distributed/ConnectionRepository.py", line 409, in importModule
+    module = __import__(moduleName, globals(), locals(), importSymbols)
+  File "/Users/Aaron/Desktop/ToontownOnline/toontown/minigame/DistributedVineGame.py", line 18, in <module>
+    from toontown.minigame import VineBat
+  File "/Users/Aaron/Desktop/ToontownOnline/toontown/minigame/VineBat.py", line 8, in <module>
+    class VineBat(NodePath.NodePath, DirectObject):
+AttributeError: type object 'panda3d.core.NodePath' has no attribute 'NodePath'

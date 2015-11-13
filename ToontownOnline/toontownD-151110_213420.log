@@ -1,0 +1,24 @@
+
+
+Starting Toontown...
+Current time: Tue Nov 10 21:34:20 2015 EST
+sys.path =  ['/Users/Aaron/Desktop/ToontownOnline', '/usr/lib/python27.zip', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-darwin', '/usr/lib/python2.7/plat-mac', '/usr/lib/python2.7/plat-mac/lib-scriptpackages', '/usr/Extras/lib/python', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/Library/Python/2.7/site-packages', '/Developer/Panda3D']
+sys.argv =  ['/Users/Aaron/Desktop/ToontownOnline/start.py']
+OTPLocalizer: Running in language: English
+TTLocalizer: Running in language: English
+ToontownStart: Polling for game2 to finish...
+ToontownStart: Game2 is finished.
+ToontownStart: Starting the game.
+ToontownStart: setting default font
+ToontownStart: Loading default gui sounds
+ToontownStart: serverVersion:  sv0.0.0.1-dev
+TTAccount: accountServer from launcher:  
+TTAccount: default accountServer:  https://toontown.go.com
+Traceback (most recent call last):
+  File "/Users/Aaron/Desktop/ToontownOnline/start.py", line 1, in <module>
+    from toontown.toonbase import ToontownStart
+  File "/Users/Aaron/Desktop/ToontownOnline/toontown/toonbase/ToontownStart.py", line 91, in <module>
+    base.initNametagGlobals()
+  File "/Users/Aaron/Desktop/ToontownOnline/toontown/toonbase/ToonBase.py", line 312, in initNametagGlobals
+    self.marginManager = MarginManager()
+NameError: global name 'MarginManager' is not defined
